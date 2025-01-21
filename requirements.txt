@@ -1,4 +1,5 @@
 python-dotenv
+PIL
 torch 
 torchvision 
 torchaudio
