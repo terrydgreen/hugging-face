@@ -19,6 +19,6 @@ def img2text(url):
 img2text("test-image.png")
 
 # llm
-
+# https://huggingface.co/spaces/KwaiVGI/LivePortrait
 
 # text to speech
