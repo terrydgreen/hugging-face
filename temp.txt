@@ -1,0 +1,32 @@
+import os
+from dotenv import find_dotenv, load_dotenv
+from transformers import pipeline
+
+load_dotenv(find_dotenv())
+
+# API_KEY = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+
+# img2text
+def img2text(url):
+    image_to_text = pipeline("image-to-text", model="Salesforce/blip-image-captioning-base")
+
+    text = image_to_text(url)[0]["generated_text"]
+
+    print(text)
+    return text
+
+img2text("test-image.png")
+
+# llm
+
+
+# text to speech
+
+https://huggingface.co/spaces/Jonny001/Image-to-Text
+
+or
+
+import streamlit as st
+
+x = st.slider('Select a value')
+st.write(x, 'squared is', x * x)
